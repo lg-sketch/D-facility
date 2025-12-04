@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'Inter', 'SF Pro Display', 'Poppins', system-ui, sans-serif;
+    color: theme('colors.textPrimary');
+    font-feature-settings: 'tnum';
+  }
+
+  body {
+    @apply min-h-screen bg-backgroundBase text-textPrimary antialiased;
+    margin: 0;
+  }
+
+  ::selection {
+    background-color: theme('colors.primaryLight');
+    color: theme('colors.white');
+  }
+}
+
+@layer utilities {
+  .arrow-path {
+    background-image: linear-gradient(90deg, rgba(12, 12, 102, 0.1) 25%, rgba(71, 80, 255, 0.9) 75%);
+    background-size: 200% 100%;
+  }
+
+  .animate-arrow-line {
+    animation: arrow-flow 3s linear infinite;
+  }
+
+  @keyframes arrow-flow {
+    0% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+}

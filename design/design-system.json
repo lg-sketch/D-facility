@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "name": "Stack System Design Language",
+    "purpose": "Ganzheitlicher Referenzrahmen für AI-generierte Interfaces mit Stack-Farbwelt, Typografie und Komponenten-Set.",
+    "tone": ["Optimistisch", "Zeitgemäß", "Professionell", "Human-Centered"]
+  },
+  "brand": {
+    "logoTreatment": "Abgerundetes Hexagon/Chain-Glyph + fette Minuskelschrift. Immer mind. 24px Abstand zu umliegenden Elementen.",
+    "voicePrinciples": [
+      "Klare, kurze Aussagen",
+      "Mikrocopy betont Zusammenarbeit, Fortschritt, Verlässlichkeit"
+    ],
+    "shapeLanguage": "Abgerundete Rechtecke (20–32px), Pillen und 1.5px Outline-Icons."
+  },
+  "foundations": {
+    "color": {
+      "primary": "#1D1DBF",
+      "primaryDark": "#0C0C66",
+      "primaryLight": "#4750FF",
+      "accentYellow": "#F4B740",
+      "backgroundBase": "#E9ECFF",
+      "backgroundSurface": "#F8F9FF",
+      "textPrimary": "#0B0C24",
+      "textSecondary": "#505272",
+      "white": "#FFFFFF",
+      "mutedLavender": "#D8DCFF",
+      "success": "#4FD1C5",
+      "usage": {
+        "surfaces": "Große Flächen in sanften Lavendelverläufen (#E9ECFF → #C9D2FF).",
+        "ctas": "Primärblau für Buttons, Akzentgelb für Avatare/Highlights.",
+        "gradients": "Linear top-left → bottom-right oder radial mit max. zwei Farben."
+      }
+    },
+    "typography": {
+      "familyStack": ["Inter", "SF Pro Display", "Poppins", "system-ui", "sans-serif"],
+      "headings": {
+        "weight": 600,
+        "tracking": "-1%",
+        "lineHeight": "110%",
+        "sizes": {
+          "hero": "48–56px",
+          "section": "28–36px",
+          "card": "20–24px"
+        }
+      },
+      "body": {
+        "weight": 400,
+        "sizeRange": "14–18px",
+        "lineHeight": "150%",
+        "tone": "Freundliche, erklärende Zweizeiler"
+      },
+      "numerics": {
+        "fontVariant": "Tabular",
+        "weight": 600,
+        "size": "48–64px"
+      }
+    },
+    "spacing": {
+      "scale": [4, 8, 12, 16, 24, 32, 48, 64],
+      "cardPadding": { "xs": 16, "md": 24, "lg": 32 },
+      "grid": "12 Spalten, 24px Gutter Desktop / 16px Mobile"
+    },
+    "shadows": {
+      "soft": "0 20px 40px rgba(13,29,255,0.15)",
+      "usage": "Nur für schwebende Karten oder Pills, niemals auf Grundfläche"
+    },
+    "radii": {
+      "card": "32px",
+      "widget": "28px",
+      "pill": "999px",
+      "avatar": "50%"
+    },
+    "iconography": {
+      "stroke": "1.5px",
+      "corner": "abgerundet",
+      "color": "Monochrom primär oder Weiß auf dunklen Flächen"
+    }
+  },
+  "components": {
+    "heroHeader": {
+      "structure": ["Logo-Glyph", "Titel + Untertitel", "CTA-Gruppe"],
+      "background": "Weiße Karte auf Lavendelverlauf, Ring 1px Weiß, Shadow soft",
+      "copy": "Titel ≤ 32 Zeichen, Subline betont Echtzeit-Kollaboration",
+      "ctas": {
+        "primary": { "fill": "primary", "text": "white", "paddingX": 32 },
+        "secondary": { "outline": "primary/20", "text": "primary" }
+      }
+    },
+    "statCard": {
+      "container": "Weiße Pillenkarte, 32px Radius, 24px Padding",
+      "contentOrder": ["Badge (rechts oben)", "Avatar + Role", "Label", "Numeric Value", "Caption"],
+      "avatar": {
+        "shape": "Kreis, 48px",
+        "backgrounds": ["accentYellow", "white", "primary"],
+        "border": "1px Weiß, Shadow soft"
+      },
+      "interaction": "Hover: translateY(-4px), shadow +10% opacity"
+    },
+    "projectStatusWidget": {
+      "base": "Primärblau, 28px Radius, Vollfläche",
+      "elements": ["Section Label uppercase", "Fraction Metric mit Gradient", "Dual Progress Bar", "Avatar Cluster", "Ghost Button"],
+      "progress": {
+        "track": "white/20",
+        "fill": "linear gradient accentYellow→success",
+        "height": 12
+      }
+    },
+    "servicePromoTile": {
+      "background": "Foto mit blau-violettem Overlay (linear 120°)",
+      "elements": ["Label uppercase", "Heading 24px weiß", "Category Pills", "Primary CTA hell", "Secondary CTA mit Pfeil"],
+      "shadow": "soft"
+    },
+    "ctaButtons": {
+      "primary": {
+        "fill": "primary",
+        "text": "white",
+        "padding": "0 28px",
+        "height": 44,
+        "radius": "pill"
+      },
+      "secondary": {
+        "outline": "primary/20",
+        "text": "primary",
+        "backgroundHover": "primary/5"
+      },
+      "iconButtons": {
+        "size": 48,
+        "shape": "circle",
+        "label": "Tooltip optional",
+        "icons": ["⇄", "⚡", "✦"]
+      }
+    },
+    "socialPostCard": {
+      "layout": "Zweiteilig: Kopie links, CTA-Stack rechts",
+      "footer": "Micro-Link mit Pfeilicon",
+      "copyStyle": "Zitat mit typografischen Anführungszeichen",
+      "ctas": ["Hire Us (primary)", "Contact Us (secondary)"]
+    },
+    "mobileProfile": {
+      "shell": "iOS-Rahmen, 36px Außenradius, Innenfläche mutedLavender",
+      "sections": ["Statusbar", "Avatar + Role", "Follower Stats Grid", "CTA Trio", "Highlight Cards"],
+      "highlightCards": {
+        "background": "weiß",
+        "header": "primary uppercase 10px",
+        "content": "16px fett"
+      }
+    },
+    "navDock": {
+      "container": "Glas-Effekt (white/80 + backdrop-blur), Pill radius",
+      "items": 5,
+      "states": {
+        "active": { "fill": "primary", "icon": "white", "shadow": "soft" },
+        "inactive": { "text": "textSecondary", "icon": "textSecondary" }
+      }
+    }
+  },
+  "layout": {
+    "sections": [
+      "Hero",
+      "3er KPI Grid",
+      "Widget + Promo Split",
+      "CTA + Social Split",
+      "Mobile Profile + Nav Dock"
+    ],
+    "alignment": "Text linksbündig, Medien mittig, konsistente vertikale Abstände (24px)",
+    "breakpoints": {
+      "mobile": "≤640px einspaltig",
+      "tablet": "2 Spalten",
+      "desktop": "3 Spalten oder Asymmetrie laut Section"
+    }
+  },
+  "highLevelGuidelines": [
+    "Kontrastierte Hierarchie: Große Ziffern + feine Labels kombinieren.",
+    "Jedes KPI-Paneel sollte Menschliches (Avatar, Teamname) enthalten.",
+    "Pills konsequent für Buttons, Badges und Chips nutzen.",
+    "Gradients nur für Hero/Oberflächen einsetzen, nicht für Textkörper außer Hero-Fractions.",
+    "Immer ausreichend White Space (mind. 24px) zwischen Karten bieten.",
+    "Icons ausschließlich Outline mit runden Enden verwenden.",
+    "Interaktionen: Hover = leichte Anhebung, Shadow-Stärke erhöhen, keine dramatischen Transforms."
+  ]
+}
+

@@ -61,7 +61,7 @@ function ReinigungPage() {
           <div className="flex-1">
             <div className="relative rounded-card shadow-soft">
               <img
-                src="/slike/reinigung-hero.jpg"
+                src={`${import.meta.env.BASE_URL}slike/reinigung-hero.jpg`}
                 alt="Reinigungsteam Deti Facility"
                 className="h-[360px] w-full rounded-3xl object-cover"
                 loading="lazy"
@@ -120,7 +120,7 @@ function ReinigungPage() {
           </div>
           <div className="relative order-1 lg:order-1">
             <img
-              src="/slike/buero.jpg"
+              src={`${import.meta.env.BASE_URL}slike/buero.jpg`}
               alt="Wohnungsabgabe mit Checkliste"
               className="h-full w-full rounded-[32px] object-cover shadow-soft"
               loading="lazy"

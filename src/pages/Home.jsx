@@ -131,7 +131,7 @@ function HomePage() {
         </div>
         <div className="flex-1">
           <img
-            src={`${import.meta.env.BASE_URL}slike/deti-team.jpg`}
+            src="/slike/deti-team.jpg"
             alt="Checkliste und Reinigungsteam"
             className="h-full w-full rounded-[32px] object-cover shadow-soft"
             loading="lazy"
@@ -255,7 +255,7 @@ function HeroSection() {
         <div className="flex-1">
           <div className="relative">
             <img
-              src={`${import.meta.env.BASE_URL}slike/facility.jpg`}
+              src="/slike/facility.jpg"
               alt="Übergabefertiges Haus"
               className="h-80 w-full rounded-[36px] object-cover shadow-soft"
               loading="lazy"

@@ -36,21 +36,14 @@ function Header({ transparent = false }) {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <NavLink to="/" className="flex items-center gap-3">
-          <div className="flex flex-col items-center">
-            <span
-              className={`text-2xl font-semibold ${isTransparent ? 'text-white' : 'text-primaryDark'}`}
-              style={{
-                background: 'linear-gradient(135deg, #F4B740 0%, #4750FF 100%)',
-                WebkitBackgroundClip: 'text',
-                color: 'transparent',
-              }}
-            >
-              ✦
-            </span>
-          </div>
-          <span className={`text-lg font-semibold tracking-wide ${isTransparent ? 'text-white' : 'text-primaryDark'}`}>
-            DETI Reinigung
+        <NavLink to="/" className="flex items-center gap-0.5">
+          <img
+            src="/logo.png"
+            alt="Logo"
+            className="h-10 w-10 object-contain"
+          />
+          <span className={`text-lg font-semibold tracking-wide self-center pt-1 ${isTransparent ? 'text-white' : 'text-primaryDark'}`}>
+            ETI Reinigung
           </span>
         </NavLink>
         <nav className="hidden flex-wrap items-center gap-3 text-xs font-semibold md:flex md:gap-6 md:text-sm">

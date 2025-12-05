@@ -41,4 +41,19 @@
       background-position: 200% 0;
     }
   }
+
+  .animate-slide-left {
+    animation: slide-left 0.55s ease-out;
+  }
+
+  @keyframes slide-left {
+    from {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 }

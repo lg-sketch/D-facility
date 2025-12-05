@@ -52,21 +52,21 @@ const steps = [
   { title: 'Übergabe', detail: 'Erfolgreiche Abgabe mit Garantie & Protokoll.' },
 ]
 
-const reviews = [
+const reviewsStatic = [
   {
-    quote: 'Die Endreinigung war absolut stressfrei. Die Abnahmegarantie hat super funktioniert.',
+    quote:
+      'Die Abgabe lief perfekt, obwohl meine Verwaltung sehr streng ist. Dank der Abnahmegarantie hatte ich absolut keinen Stress.',
     author: 'Sarah M.',
-    role: 'Privatkundin aus Bern',
   },
   {
-    quote: 'Wir haben unser komplettes Büro gezügelt – alles wurde sorgfältig verpackt und pünktlich geliefert.',
-    author: 'Markus B.',
-    role: 'Geschäftsführer aus Thun',
+    quote:
+      'Umzug und Reinigung im Paket waren die beste Entscheidung. Alles aus einer Hand und sehr sorgfältig ausgeführt.',
+    author: 'Familie Keller',
   },
   {
-    quote: 'Sehr freundliches Personal und faire Preise. Hatte Angst vor dem Umzug, aber alles lief perfekt.',
-    author: 'Julia K.',
-    role: 'Privatkundin aus Köniz',
+    quote:
+      'Schnelle Offerte und ein fairer Preis ohne versteckte Kosten. Der Vermieter hatte bei der Abnahme nichts zu beanstanden.',
+    author: 'Thomas Wüthrich',
   },
 ]
 
@@ -174,20 +174,19 @@ function HomePage() {
             </div>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {reviews.map((review) => (
+            {reviewsStatic.map((review, idx) => (
               <article
-                key={review.author}
-                className="rounded-3xl border border-white/70 bg-white/40 p-8 text-center shadow-soft backdrop-blur"
+                key={`${review.author}-${idx}`}
+                className="rounded-3xl border border-white/70 bg-white/60 p-8 text-center shadow-soft backdrop-blur"
               >
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-white text-2xl text-primary shadow-soft">
                   ”
                 </div>
-                <p className="mt-6 text-sm text-textSecondary">„{review.quote}“</p>
+                <p className="mt-6 text-base md:text-lg text-textSecondary">„{review.quote}“</p>
                 <p className="mt-6 text-base font-semibold text-primaryDark">{review.author}</p>
-                <p className="text-xs uppercase tracking-[0.3em] text-textSecondary">{review.role}</p>
                 <div className="mt-4 flex justify-center gap-1 text-accentYellow">
-                  {[...Array(5)].map((_, idx) => (
-                    <span key={idx}>★</span>
+                  {[...Array(5)].map((_, starIdx) => (
+                    <span key={starIdx}>★</span>
                   ))}
                 </div>
               </article>

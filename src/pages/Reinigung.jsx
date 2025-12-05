@@ -97,21 +97,19 @@ function ReinigungPage() {
             <h2 className="text-3xl font-semibold text-primaryDark">Wir übernehmen die Spannung</h2>
             <div className="mt-6 grid gap-6 md:grid-cols-3 lg:grid-cols-1">
               <div>
-                <h4 className="text-sm font-semibold uppercase tracking-[0.3em] text-textSecondary">
-                  Wenn es weh tut
-                </h4>
+                <h4 className="text-xl font-semibold text-primaryDark">Wenn es weh tut</h4>
                 <p className="mt-2 text-sm text-textSecondary">
                   Wohnungsabnahmen verschieben sich, wenn Backofen, Fenster und Silikonfugen nicht perfekt sind. Verwaltungen blocken die Kaution.
                 </p>
               </div>
               <div>
-                <h4 className="text-sm font-semibold uppercase tracking-[0.3em] text-textSecondary">Druck steigt</h4>
+                <h4 className="text-xl font-semibold text-primaryDark">Druck steigt</h4>
                 <p className="mt-2 text-sm text-textSecondary">
                   Jeder Folgetermin hängt dran: Umzug, Wohnungsübergabe, Inserate. Das Team arbeitet hektisch, Möbel stehen im Treppenhaus, Fehler passieren.
                 </p>
               </div>
               <div>
-                <h4 className="text-sm font-semibold uppercase tracking-[0.3em] text-textSecondary">Wir lösen es</h4>
+                <h4 className="text-xl font-semibold text-primaryDark">Wir lösen es</h4>
                 <p className="mt-2 text-sm text-textSecondary">
                   Deti Facility stellt ein spezialisiertes Übergabe-Team, dokumentiert alles digital und fixiert die Verantwortung schriftlich – inklusive Nachreinigung binnen 24h.
                 </p>

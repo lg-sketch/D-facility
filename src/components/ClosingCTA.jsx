@@ -1,4 +1,4 @@
-import { useId } from 'react'
+import { useId, useState } from 'react'
 
 const defaultBackground = '/slike/reinigung-background.jpg'
 
@@ -23,6 +23,8 @@ function ClosingCTA({
   backgroundImage = defaultBackground,
 }) {
   const formId = useId()
+  const [selectedService, setSelectedService] = useState('')
+  const services = ['Reinigung', 'Umzüge', 'Übergabe', 'Büroreinigung', 'Spezialreinigung']
 
   return (
     <section className="px-0 py-16 sm:px-6 lg:px-8">
@@ -64,19 +66,58 @@ function ClosingCTA({
             className="w-full max-w-full rounded-[30px] bg-white/95 p-5 text-textPrimary shadow-soft backdrop-blur sm:p-6"
           >
             <p id={`${formId}-title`} className="text-lg font-semibold text-primaryDark">
-              Kontaktformular
+              Kontaktieren Sie uns
             </p>
-            <p className="text-xs text-textSecondary">Wir melden uns innerhalb von 2 Stunden.</p>
+            <p className="text-xs text-textSecondary">Wir melden uns kurzfristig nach Ihrer Anfrage.</p>
             <div className="mt-4 grid gap-3">
-              <InputField label="Name" type="text" name="cta-name" />
-              <InputField label="E-Mail" type="email" name="cta-email" />
-              <InputField label="Telefon" type="tel" name="cta-phone" />
+              <InputField label="Ihr Vollständiger Name" type="text" name="cta-name" />
+              <div className="grid gap-3 md:grid-cols-2">
+                <InputField label="E-Mail" type="email" name="cta-email" />
+                <InputField label="Telefon" type="tel" name="cta-phone" />
+              </div>
               <div>
-                <label className="text-xs uppercase tracking-[0.3em] text-textSecondary">Nachricht</label>
+                <label className="text-xs font-semibold text-[#0C0C66]">Für welchen Service interessieren Sie sich?</label>
+                <select
+                  name="cta-service"
+                  required
+                  className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus:border-primary focus:outline-none"
+                  value={selectedService}
+                  onChange={(e) => setSelectedService(e.target.value)}
+                >
+                  <option value="">Bitte wählen</option>
+                  {services.map((service) => (
+                    <option key={service} value={service}>
+                      {service}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              {selectedService && (
+                <div className="grid gap-3 md:grid-cols-2">
+                  <div>
+                    <label className="text-xs font-semibold text-[#0C0C66]">Wunschtermin (Datum)</label>
+                    <input
+                      type="date"
+                      name="cta-date"
+                      className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus:border-primary focus:outline-none"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-xs font-semibold text-[#0C0C66]">Wunschtermin (Uhrzeit)</label>
+                    <input
+                      type="time"
+                      name="cta-time"
+                      className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus:border-primary focus:outline-none"
+                    />
+                  </div>
+                </div>
+              )}
+              <div>
+                <label className="text-xs font-semibold text-[#0C0C66]">Ihre Nachricht</label>
                 <textarea
                   name="cta-message"
                   rows="3"
-                  className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-sm focus:border-primary focus:outline-none"
+                  className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus:border-primary focus:outline-none"
                   placeholder="Erzählen Sie uns kurz von Ihrem Projekt..."
                 />
               </div>
@@ -97,11 +138,11 @@ function ClosingCTA({
 function InputField({ label, type, name }) {
   return (
     <div>
-      <label className="text-xs uppercase tracking-[0.3em] text-textSecondary">{label}</label>
+      <label className="text-xs font-semibold text-[#0C0C66]">{label}</label>
       <input
         type={type}
         name={name}
-        className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-sm focus:border-primary focus:outline-none"
+        className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus:border-primary focus:outline-none"
         required
       />
     </div>

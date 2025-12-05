@@ -102,19 +102,19 @@ function UmzuegePage() {
             <h2 className="text-3xl font-semibold text-primaryDark">Wir nehmen den Zug-Stress raus</h2>
             <div className="mt-6 grid gap-6 md:grid-cols-3 lg:grid-cols-1">
               <div>
-                <h4 className="text-sm font-semibold uppercase tracking-[0.3em] text-textSecondary">Wenn es brennt</h4>
+                <h4 className="text-xl font-semibold text-primaryDark">Wenn es brennt</h4>
                 <p className="mt-2 text-sm text-textSecondary">
                   Lift fehlt, Bewilligungen sind nicht da, Möbel stauen sich auf dem Trottoir und Nachbarn drohen mit Polizei.
                 </p>
               </div>
               <div>
-                <h4 className="text-sm font-semibold uppercase tracking-[0.3em] text-textSecondary">Druck steigt</h4>
+                <h4 className="text-xl font-semibold text-primaryDark">Druck steigt</h4>
                 <p className="mt-2 text-sm text-textSecondary">
                   Übergabeuhr tickt, Käufer warten, Verwaltung fordert Protokolle – jede Verzögerung kostet Depot und Reputation.
                 </p>
               </div>
               <div>
-                <h4 className="text-sm font-semibold uppercase tracking-[0.3em] text-textSecondary">Wir lösen es</h4>
+                <h4 className="text-xl font-semibold text-primaryDark">Wir lösen es</h4>
                 <p className="mt-2 text-sm text-textSecondary">
                   Deti koordiniert Transporte, Reinigung und Schlüsselübergabe in einem Stream. Nacharbeiten erfolgen innerhalb
                   von 24h ohne Mehrkosten.

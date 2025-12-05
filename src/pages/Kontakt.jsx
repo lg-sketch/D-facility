@@ -1,7 +1,11 @@
+import { useState } from 'react'
 import Seo from '../components/Seo.jsx'
 import ClosingCTA from '../components/ClosingCTA.jsx'
 
 function KontaktPage() {
+  const services = ['Reinigung', 'Umzüge', 'Übergabe', 'Büroreinigung', 'Spezialreinigung']
+  const [selectedService, setSelectedService] = useState('')
+
   return (
     <>
       <Seo
@@ -22,28 +26,78 @@ function KontaktPage() {
       <section className="mx-auto grid max-w-6xl gap-8 px-4 pb-12 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div className="rounded-card bg-white p-8 shadow-soft">
           <form className="space-y-4">
-            {[
-              { label: 'Name', type: 'text', name: 'name' },
-              { label: 'E-Mail', type: 'email', name: 'email' },
-              { label: 'Telefon', type: 'tel', name: 'phone' },
-              { label: 'Service', type: 'text', name: 'service' },
-            ].map((field) => (
-              <div key={field.name}>
-                <label className="text-xs uppercase tracking-[0.3em] text-textSecondary">{field.label}</label>
-                <input
-                  type={field.type}
-                  name={field.name}
-                  required
-                  className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-sm focus:border-primary focus:outline-none"
-                />
-              </div>
-            ))}
             <div>
-              <label className="text-xs uppercase tracking-[0.3em] text-textSecondary">Nachricht</label>
+              <label className="text-xs font-semibold text-[#0C0C66]">Ihr Vollständiger Name</label>
+              <input
+                type="text"
+                name="name"
+                required
+                className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus:border-primary focus:outline-none"
+              />
+            </div>
+            <div>
+              <label className="text-xs font-semibold text-[#0C0C66]">E-Mail</label>
+              <input
+                type="email"
+                name="email"
+                required
+                className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus:border-primary focus:outline-none"
+              />
+            </div>
+            <div>
+              <label className="text-xs font-semibold text-[#0C0C66]">Telefon</label>
+              <input
+                type="tel"
+                name="phone"
+                required
+                className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus-border-primary focus:outline-none"
+              />
+            </div>
+            <div>
+              <label className="text-xs font-semibold text-[#0C0C66]">
+                Für welchen Service interessieren Sie sich?
+              </label>
+              <select
+                name="service"
+                required
+                className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus:border-primary focus:outline-none"
+                value={selectedService}
+                onChange={(e) => setSelectedService(e.target.value)}
+              >
+                <option value="">Bitte wählen</option>
+                {services.map((service) => (
+                  <option key={service} value={service}>
+                    {service}
+                  </option>
+                ))}
+              </select>
+            </div>
+            {selectedService && (
+              <div className="grid gap-4 md:grid-cols-2">
+                <div>
+                  <label className="text-xs font-semibold text-[#0C0C66]">Wunschtermin (Datum)</label>
+                  <input
+                    type="date"
+                    name="date"
+                      className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus:border-primary focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs font-semibold text-[#0C0C66]">Wunschtermin (Uhrzeit)</label>
+                  <input
+                    type="time"
+                    name="time"
+                      className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus:border-primary focus:outline-none"
+                  />
+                </div>
+              </div>
+            )}
+            <div>
+              <label className="text-xs font-semibold text-[#0C0C66]">Ihre Nachricht</label>
               <textarea
                 name="message"
                 rows="4"
-                className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-sm focus:border-primary focus:outline-none"
+                className="mt-2 w-full rounded-2xl border border-mutedLavender bg-backgroundSurface px-4 py-3 text-base focus:border-primary focus:outline-none"
               />
             </div>
             <button

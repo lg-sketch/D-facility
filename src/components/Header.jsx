@@ -35,18 +35,18 @@ function Header({ transparent = false }) {
           : 'bg-backgroundSurface/95 text-textPrimary shadow-soft backdrop-blur'
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <NavLink to="/" className="flex items-center gap-0.5">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-5 lg:px-6">
+        <NavLink to="/" className="flex items-center gap-1.5">
           <img
             src="/logo.png"
             alt="Logo"
-            className="h-10 w-10 object-contain"
+            className="h-16 w-16 object-contain"
           />
-          <span className={`text-lg font-semibold tracking-wide self-center pt-1 ${isTransparent ? 'text-white' : 'text-primaryDark'}`}>
-            ETI Reinigung
+          <span className={`text-lg font-semibold tracking-wide self-center ${isTransparent ? 'text-white' : 'text-primaryDark'}`}>
+            DETI Reinigung
           </span>
         </NavLink>
-        <nav className="hidden flex-wrap items-center gap-3 text-xs font-semibold md:flex md:gap-6 md:text-sm">
+        <nav className="hidden flex-wrap items-center gap-1.5 text-xs font-semibold md:flex md:gap-3 md:text-sm">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
@@ -65,7 +65,7 @@ function Header({ transparent = false }) {
             </NavLink>
           ))}
         </nav>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <button
             type="button"
             className={`inline-flex h-10 w-10 flex-col items-center justify-center rounded-full border text-sm md:hidden ${

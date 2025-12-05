@@ -72,13 +72,6 @@ function KontaktPage() {
         </div>
       </section>
 
-      <div className="px-4 sm:px-6 lg:px-8">
-        <ClosingCTA
-          eyebrow="Kontakt aufnehmen"
-          title="Wir planen Ihre Übergabe heute."
-          subtitle="Kurze Wege, klare Antworten und ein Team, das Verantwortung übernimmt."
-        />
-      </div>
     </>
   )
 }

@@ -7,8 +7,8 @@ const blogPosts = [
     excerpt:
       'Neue Pollenwellen und Homeoffice sorgen für höhere Hygieneanforderungen. Wir zeigen, wie Facility-Teams die Saison vorplanen.',
     tags: ['Reinigung', 'Bern'],
-    image: '/slike/bern-facility.jpg',
-    heroImage: '/slike/bern-facility.jpg',
+    image: '/slike/bern facility.jpg',
+    heroImage: '/slike/bern facility.jpg',
     category: 'Reinigung',
     sections: [
       {

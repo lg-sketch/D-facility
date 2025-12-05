@@ -41,7 +41,7 @@ function FaqPage() {
           })),
         }}
       />
-      <section className="bg-backgroundSurface">
+      <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 pb-16 pt-24 sm:px-6 lg:px-8">
           <p className="text-xs uppercase tracking-[0.4em] text-primary">FAQ</p>
           <h1 className="mt-4 text-4xl font-semibold text-primaryDark">Antworten für Berns anspruchsvollste Übergaben.</h1>

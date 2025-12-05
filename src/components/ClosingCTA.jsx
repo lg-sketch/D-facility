@@ -63,8 +63,12 @@ function ClosingCTA({
 
           <form
             aria-labelledby={`${formId}-title`}
+            action="https://formspree.io/f/xvgeqvzz"
+            method="POST"
             className="w-full max-w-full rounded-[30px] bg-white/95 p-5 text-textPrimary shadow-soft backdrop-blur sm:p-6"
           >
+            <input type="hidden" name="_subject" value="Neue Anfrage über deti-reinigung.ch (CTA)" />
+            <input type="text" name="_gotcha" style={{ display: 'none' }} />
             <p id={`${formId}-title`} className="text-lg font-semibold text-primaryDark">
               Kontaktieren Sie uns
             </p>

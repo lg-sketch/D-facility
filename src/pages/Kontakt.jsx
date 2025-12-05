@@ -25,7 +25,13 @@ function KontaktPage() {
 
       <section className="mx-auto grid max-w-6xl gap-8 px-4 pb-12 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div className="rounded-card bg-white p-8 shadow-soft">
-          <form className="space-y-4">
+          <form
+            className="space-y-4"
+            action="https://formspree.io/f/xvgeqvzz"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Neue Anfrage über deti-reinigung.ch (Kontakt)" />
+            <input type="text" name="_gotcha" style={{ display: 'none' }} />
             <div>
               <label className="text-xs font-semibold text-[#0C0C66]">Ihr Vollständiger Name</label>
               <input

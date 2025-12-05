@@ -25,7 +25,7 @@ function ClosingCTA({
   const formId = useId()
 
   return (
-    <section className="px-4 py-16 sm:px-6 lg:px-8">
+    <section className="px-0 py-16 sm:px-6 lg:px-8">
       <div className="relative overflow-hidden rounded-[40px] shadow-soft">
         <img
           src={backgroundImage}
@@ -34,7 +34,7 @@ function ClosingCTA({
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primaryDark/90 via-primary/85 to-primaryLight/75" />
-        <div className="relative grid gap-10 p-8 text-white lg:grid-cols-[1.1fr,0.9fr] lg:p-12">
+        <div className="relative grid gap-10 p-6 text-white sm:p-8 lg:grid-cols-[1.1fr,0.9fr] lg:p-12">
           <div className="space-y-4">
             <p className="text-xs uppercase tracking-[0.4em] text-white/70">{eyebrow}</p>
             <h2 className="text-4xl font-semibold leading-tight">{title}</h2>
@@ -61,7 +61,7 @@ function ClosingCTA({
 
           <form
             aria-labelledby={`${formId}-title`}
-            className="rounded-[30px] bg-white/95 p-6 text-textPrimary shadow-soft backdrop-blur"
+            className="w-full max-w-full rounded-[30px] bg-white/95 p-5 text-textPrimary shadow-soft backdrop-blur sm:p-6"
           >
             <p id={`${formId}-title`} className="text-lg font-semibold text-primaryDark">
               Kontaktformular

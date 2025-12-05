@@ -196,7 +196,7 @@ function HomePage() {
         </div>
       </section>
 
-      <div className="px-4 sm:px-6 lg:px-8">
+      <div className="px-0 sm:px-6 lg:px-8">
         <ClosingCTA />
       </div>
     </div>
@@ -257,7 +257,7 @@ function HeroSection() {
               className="h-80 w-full rounded-[36px] object-cover shadow-soft"
               loading="lazy"
             />
-            <div className="absolute -bottom-6 left-10 right-28 flex items-center gap-4 rounded-2xl border border-white/50 bg-white/30 p-4 shadow-soft backdrop-blur">
+            <div className="absolute -bottom-6 left-4 right-4 flex items-center gap-4 rounded-2xl bg-white/70 p-4 shadow-lg backdrop-blur-xl border border-white/50 sm:left-10 sm:right-28">
               <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#E8FFF2] text-[#26C281]">
                 <ShieldCheck className="h-6 w-6" color="#26C281" />
               </span>

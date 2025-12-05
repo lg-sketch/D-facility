@@ -72,7 +72,7 @@ function UeberUnsPage() {
         </div>
       </section>
 
-      <div className="px-4 sm:px-6 lg:px-8">
+      <div className="px-0 sm:px-6 lg:px-8">
         <ClosingCTA
           eyebrow="Lernen wir uns kennen"
           title="Wir behandeln jede Immobilie wie unsere eigene."

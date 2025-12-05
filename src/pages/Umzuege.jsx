@@ -165,7 +165,7 @@ function UmzuegePage() {
         </div>
       </section>
 
-      <div className="px-4 sm:px-6 lg:px-8">
+      <div className="px-0 sm:px-6 lg:px-8">
         <ClosingCTA
           eyebrow="Umzug planen"
           title="Selbst heikle Übergaben werden entspannt."

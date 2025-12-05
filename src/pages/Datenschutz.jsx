@@ -135,7 +135,7 @@ function DatenschutzPage() {
           </div>
         </div>
       </section>
-      <div className="px-4 pb-16 sm:px-6 lg:px-8">
+      <div className="px-0 pb-16 sm:px-6 lg:px-8">
         <ClosingCTA
           eyebrow="Transparenz"
           title="Datenschutz ist Teil unserer Qualität."

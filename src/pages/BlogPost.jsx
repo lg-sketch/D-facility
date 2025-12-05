@@ -148,7 +148,7 @@ function BlogPostPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-0 pb-16 sm:px-6 lg:px-8">
         <ClosingCTA
           eyebrow="Nächster Schritt"
           title="Wir planen Ihren Reinigung- oder Umzugs-Case."

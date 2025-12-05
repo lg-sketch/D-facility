@@ -169,7 +169,7 @@ function ReinigungPage() {
         </div>
       </section>
 
-      <div className="px-4 sm:px-6 lg:px-8">
+      <div className="px-0 sm:px-6 lg:px-8">
         <ClosingCTA
           eyebrow="Reinigung buchen"
           title="Ihre Wohnungsabgabe? Schon geregelt."

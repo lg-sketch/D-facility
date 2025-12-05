@@ -62,7 +62,7 @@ function BlogPage() {
         </div>
       </section>
 
-      <div className="px-4 sm:px-6 lg:px-8">
+      <div className="px-0 sm:px-6 lg:px-8">
         <ClosingCTA
           eyebrow="Content + Services"
           title="Lassen Sie uns gemeinsam Ihre Story erzählen."

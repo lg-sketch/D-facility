@@ -9,7 +9,7 @@ function KontaktPage() {
         description="Kontaktieren Sie Deti Facility Management GmbH für Reinigung, Umzüge und Übergaben in Bern."
         canonicalPath="/kontakt"
       />
-      <section className="bg-backgroundSurface">
+      <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 pb-16 pt-24 sm:px-6 lg:px-8">
           <p className="text-xs uppercase tracking-[0.4em] text-primary">Kontakt</p>
           <h1 className="mt-4 text-4xl font-semibold text-primaryDark">Schnelle Antworten, verbindliche Zusagen.</h1>
@@ -55,7 +55,7 @@ function KontaktPage() {
           </form>
         </div>
         <div className="rounded-card bg-white p-8 shadow-soft">
-          <h3 className="text-xl font-semibold text-primaryDark">Direkter Draht</h3>
+          <h3 className="text-xl font-semibold text-primaryDark">Kontakt Info</h3>
           <p className="mt-2 text-sm text-textSecondary">
             Mail: <a href="mailto:info@deti-reinigung.ch" className="text-primary">info@deti-reinigung.ch</a>
           </p>
@@ -63,12 +63,14 @@ function KontaktPage() {
             Telefon: <a href="tel:+41791511216" className="text-primary">+41 79 151 12 16</a>
           </p>
           <p className="text-sm text-textSecondary">Web: www.deti-reinigung.ch</p>
-          <div className="mt-6 flex h-64 w-full items-center justify-center rounded-3xl bg-gradient-to-br from-primary to-primaryLight text-white">
-            <span className="text-sm font-semibold">Region Bern & Umgebung – Einsatzgebiet</span>
+          <div className="mt-6 h-72 w-full overflow-hidden rounded-3xl shadow-soft">
+            <img
+              src="/slike/deti-cleaning.png"
+              alt="Region Bern & Umgebung – Einsatzgebiet"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
           </div>
-          <p className="mt-3 text-xs text-textSecondary">
-            Region Bern & Umgebung · Deti Facility Management GmbH
-          </p>
         </div>
       </section>
 

@@ -64,7 +64,7 @@ function FaqPage() {
         </div>
       </section>
 
-      <div className="px-4 sm:px-6 lg:px-8">
+      <div className="px-0 sm:px-6 lg:px-8">
         <ClosingCTA
           eyebrow="Weitere Fragen?"
           title="Wir antworten innerhalb von 2 Stunden."

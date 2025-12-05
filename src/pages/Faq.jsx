@@ -46,8 +46,10 @@ function FaqPage() {
           <p className="text-xs uppercase tracking-[0.4em] text-primary">FAQ</p>
           <h1 className="mt-4 text-4xl font-semibold text-primaryDark">Antworten für Berns anspruchsvollste Übergaben.</h1>
           <p className="mt-4 max-w-3xl text-lg text-textSecondary">
-            Wenn noch Fragen offen sind, erreichen Sie uns jederzeit via<br />
-            info@deti-reinigung.ch oder +41 79 151 12 16.
+            Wenn noch Fragen offen sind, erreichen Sie uns jederzeit via info@deti-reinigung.ch{' '}
+            <span className="hidden sm:inline">oder </span>
+            <br className="sm:hidden" />
+            +41 79 151 12 16.
           </p>
         </div>
       </section>

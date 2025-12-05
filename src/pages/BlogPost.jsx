@@ -97,12 +97,7 @@ function BlogPostPage() {
               )
             }
             if (section.type === 'image') {
-              return (
-                <figure key={idx} className="overflow-hidden rounded-[32px]">
-                  <img src={section.src} alt={section.alt} className="w-full object-cover" loading="lazy" />
-                  <figcaption className="mt-2 text-center text-xs text-textSecondary">{section.alt}</figcaption>
-                </figure>
-              )
+              return null
             }
             if (section.type === 'list') {
               return (

@@ -37,11 +37,6 @@ function UeberUnsPage() {
             Hinter Deti steht ein engagiertes Team, das versteht, wie anspruchsvoll ein Umzug sein kann. Wir sind nicht nur
             eine Reinigungsfirma – wir sind Ihre Lösung für den kompletten Standortwechsel in Bern und der Zentralschweiz.
           </p>
-          <p className="mt-4 max-w-3xl text-lg text-textSecondary">
-            Das bedeutet für Sie: Ein Ansprechpartner für den gesamten Prozess und die Sicherheit einer 100%igen Abnahmegarantie.
-            Wir arbeiten speditiv, zuverlässig und verwenden umweltschonende Materialien, um Ihr altes Zuhause makellos an die
-            Verwaltung zu übergeben.
-          </p>
         </div>
       </section>
 
@@ -60,15 +55,13 @@ function UeberUnsPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-12 sm:px-6 lg:px-8">
-        <div className="rounded-card bg-white p-8 shadow-soft">
-          <h2 className="text-3xl font-semibold text-primaryDark">Zertifizierungen & Partner</h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {['SVUT Mitglied', 'ISO 9001 angelehnt', 'Regionalverband Bern', 'CO₂-reduzierte Flotte'].map((badge) => (
-              <span key={badge} className="rounded-full border border-mutedLavender px-4 py-2 text-center text-sm text-textSecondary">
-                {badge}
-              </span>
-            ))}
-          </div>
+        <div className="">
+          <h2 className="text-3xl font-semibold text-primaryDark">Ihre Sicherheit bei jedem Schritt</h2>
+          <p className="mt-4 text-lg text-textSecondary">
+            Das bedeutet für Sie: Ein Ansprechpartner für den gesamten Prozess und die Sicherheit einer 100%igen Abnahmegarantie.
+            Wir arbeiten speditiv, zuverlässig und verwenden umweltschonende Materialien, um Ihr altes Zuhause makellos an die
+            Verwaltung zu übergeben.
+          </p>
         </div>
       </section>
 

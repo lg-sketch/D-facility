@@ -10,7 +10,7 @@ function Footer({ className = '' }) {
     <footer className={`border-t border-white/30 bg-primaryDark text-white ${className}`}>
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 lg:flex-row lg:items-start lg:gap-8 lg:px-8">
         <div className="space-y-4 lg:flex-[0.75]">
-          <p className="text-xs uppercase tracking-[0.4em] text-white/70">Deti Facility</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-white/70">Deti Facility Management GmbH</p>
           <h3 className="text-2xl font-semibold leading-tight">
             <span className="bg-gradient-to-r from-white via-[#DFF6FF] to-[#0EBCCE]/70 bg-clip-text text-transparent">
               Sauberkeit & Umzüge

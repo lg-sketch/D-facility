@@ -2,6 +2,20 @@ import { useId } from 'react'
 
 const defaultBackground = '/slike/reinigung-background.jpg'
 
+const highlightPoints = [
+  'Alles aus einer Hand: Umzug & Reinigung perfekt kombiniert.',
+  '100% Abnahmegarantie: Sichere Übergabe ohne Nachkosten.',
+  'Kostenlose Offerte: Schnell zum unverbindlichen Festpreis.',
+]
+
+function splitHighlight(point) {
+  const [headline, ...rest] = point.split(':')
+  return {
+    headline: headline?.trim() ?? '',
+    detail: rest.join(':').trim(),
+  }
+}
+
 function ClosingCTA({
   eyebrow = 'Bereit für den nächsten Schritt?',
   title = 'Garantierte Übergaben ohne Stress.',
@@ -25,12 +39,24 @@ function ClosingCTA({
             <p className="text-xs uppercase tracking-[0.4em] text-white/70">{eyebrow}</p>
             <h2 className="text-4xl font-semibold leading-tight">{title}</h2>
             <p className="text-base text-white/85">{subtitle}</p>
-            <p className="text-sm text-white/70">
-              Telefon: <a href="tel:+41791511216" className="font-semibold underline">+41 79 151 12 16</a> · Mail:{' '}
-              <a href="mailto:info@deti-reinigung.ch" className="font-semibold underline">
-                info@deti-reinigung.ch
-              </a>
-            </p>
+            <ul className="mt-2 space-y-3 text-base text-white/90">
+              {highlightPoints.map((point) => {
+                const { headline, detail } = splitHighlight(point)
+                return (
+                  <li key={point} className="flex items-start gap-3">
+                    <img
+                      src="/slike/check.png"
+                      alt=""
+                      className="mt-0.5 h-5 w-5 flex-shrink-0"
+                      loading="lazy"
+                    />
+                    <span>
+                      <strong>{headline}:</strong> {detail}
+                    </span>
+                  </li>
+                )
+              })}
+            </ul>
           </div>
 
           <form

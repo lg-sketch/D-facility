@@ -5,18 +5,18 @@ import { ShieldCheck, Users, Sparkles } from 'lucide-react'
 
 const values = [
   {
-    title: 'Verlässlichkeit',
-    copy: 'Wir übergeben Objekte nur, wenn Verwaltung oder Käufer schriftlich zufrieden sind.',
+    title: 'Pünktlichkeit',
+    copy: 'Fixe Zeitfenster werden eingehalten – Übergaben erfolgen vorbereitet und auf die Minute.',
     icon: ShieldCheck,
   },
   {
-    title: 'Empathie',
-    copy: 'Teams sprechen Hochdeutsch, Französisch und Englisch – ideal für internationale Kunden.',
+    title: 'Transparenz',
+    copy: 'Klare Absprachen, dokumentierte Schritte und eine erreichbare Ansprechperson während des gesamten Umzugs.',
     icon: Users,
   },
   {
-    title: 'Innovation',
-    copy: 'Digitale Checklisten, Sensorik in Fahrzeugen und Reporting in Echtzeit.',
+    title: 'Schweizer Qualitätsstandards',
+    copy: 'Sorgfältige Materialien, saubere Protokolle und Abnahmegarantie gemäss regionalen Vorgaben.',
     icon: Sparkles,
   },
 ]
@@ -32,9 +32,15 @@ function UeberUnsPage() {
       <section className="bg-backgroundSurface">
         <div className="mx-auto max-w-6xl px-4 pb-16 pt-24 sm:px-6 lg:px-8">
           <p className="text-xs uppercase tracking-[0.4em] text-primary">Über uns</p>
-          <h1 className="mt-4 text-4xl font-semibold text-primaryDark">Wir verbinden Facility Know-how mit der Wärme eines Familienbetriebs.</h1>
+          <h1 className="mt-4 text-4xl font-semibold text-primaryDark">Über uns – Ihr Partner für einen sorgenfreien Wohnungswechsel</h1>
           <p className="mt-4 max-w-3xl text-lg text-textSecondary">
-            Deti Facility Management GmbH wurde in Bern gegründet, um Immobilieneigentümer:innen einen Partner zu geben, der Reinigung, Umzug und Garantieprozesse zusammenbringt. Unser Führungsteam kommt aus Hotellerie, Logistik und Immobilienverwaltung – dadurch kennen wir jede Checkliste.
+            Hinter Deti steht ein engagiertes Team, das versteht, wie anspruchsvoll ein Umzug sein kann. Wir sind nicht nur
+            eine Reinigungsfirma – wir sind Ihre Lösung für den kompletten Standortwechsel in Bern und der Zentralschweiz.
+          </p>
+          <p className="mt-4 max-w-3xl text-lg text-textSecondary">
+            Das bedeutet für Sie: Ein Ansprechpartner für den gesamten Prozess und die Sicherheit einer 100%igen Abnahmegarantie.
+            Wir arbeiten speditiv, zuverlässig und verwenden umweltschonende Materialien, um Ihr altes Zuhause makellos an die
+            Verwaltung zu übergeben.
           </p>
         </div>
       </section>

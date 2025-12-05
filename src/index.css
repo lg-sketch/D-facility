@@ -9,6 +9,7 @@
     font-family: 'Inter', 'SF Pro Display', 'Poppins', system-ui, sans-serif;
     color: theme('colors.textPrimary');
     font-feature-settings: 'tnum';
+    font-size: 17px;
   }
 
   body {

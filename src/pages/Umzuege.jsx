@@ -58,7 +58,7 @@ function UmzuegePage() {
           <div className="flex-1">
             <div className="relative rounded-card shadow-soft">
               <img
-                src={`${import.meta.env.BASE_URL}slike/umzuege.jpg`}
+                src="/slike/umzuege.jpg"
                 alt="Umzugsservice Bern"
                 className="h-[360px] w-full rounded-3xl object-cover"
                 loading="lazy"
@@ -92,7 +92,7 @@ function UmzuegePage() {
         <div className="grid gap-16 lg:grid-cols-[0.9fr,1.1fr]">
           <div className="relative order-1 lg:order-1">
             <img
-              src={`${import.meta.env.BASE_URL}slike/furniture.jpg`}
+              src="/slike/furniture.jpg"
               alt="Umzugsteam bei der Arbeit"
               className="h-[360px] w-full rounded-[32px] object-cover shadow-soft"
               loading="lazy"

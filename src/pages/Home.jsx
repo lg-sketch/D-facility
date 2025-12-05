@@ -41,9 +41,8 @@ const iconBoxes = [
 
 const checklistItems = [
   'Protokoll nach Schweizer Mietrecht',
-  'Ökologische Reinigungsmittel für empfindliche Oberflächen',
-  'Zeitfenster mit Live-Tracking für Schlüsselübergabe',
-  'Notfall-Hotline +41 79 151 12 16',
+  'Ökologische Pflegemittel',
+  'Pünktliche Schlüsselübergabe',
 ]
 
 const steps = [
@@ -112,18 +111,16 @@ function HomePage() {
 
       <section className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 lg:flex-row lg:px-8">
         <div className="flex-1 p-0 lg:pr-8">
-          <p className="text-xs uppercase tracking-[0.4em] text-primary">Checkliste Bern</p>
-          <h3 className="mt-3 text-3xl font-semibold">Alles abgehakt, bevor die Verwaltung den Schlüssel sieht.</h3>
+          <p className="text-xs uppercase tracking-[0.4em] text-primary">Unser Qualitäts-Versprechen</p>
+          <h3 className="mt-3 text-3xl font-semibold">Alles erledigt, bevor die Verwaltung kommt.</h3>
           <p className="mt-3 text-sm text-textSecondary">
-            Unsere Spezialteams liefern ein <strong>gerichtsfestes Protokoll</strong>, dokumentieren jede Fläche mit Fotos
-            und stimmen den <strong>Übergabetermin live</strong> mit Verwaltung oder Käufer ab.
+            Wir garantieren ein <strong>gerichtsfestes Protokoll</strong>, lückenlose Fotodokumentation und koordinieren den
+            Termin direkt mit Ihrer Verwaltung.
           </p>
           <ul className="mt-6 space-y-4">
             {checklistItems.map((item) => (
               <li key={item} className="flex items-start gap-3 text-sm text-textSecondary">
-                <span className="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-success text-xs font-semibold text-primaryDark">
-                  ✓
-                </span>
+                <img src="/slike/check.png" alt="" className="mt-0.5 h-5 w-5 flex-shrink-0" loading="lazy" />
                 <span>{item}</span>
               </li>
             ))}
@@ -131,7 +128,7 @@ function HomePage() {
         </div>
         <div className="flex-1">
           <img
-            src={`${import.meta.env.BASE_URL}slike/deti-team.jpg`}
+            src="/slike/deti-team.jpg"
             alt="Checkliste und Reinigungsteam"
             className="h-full w-full rounded-[32px] object-cover shadow-soft"
             loading="lazy"
@@ -255,7 +252,7 @@ function HeroSection() {
         <div className="flex-1">
           <div className="relative">
             <img
-              src={`${import.meta.env.BASE_URL}slike/facility.jpg`}
+              src="/slike/facility.jpg"
               alt="Übergabefertiges Haus"
               className="h-80 w-full rounded-[36px] object-cover shadow-soft"
               loading="lazy"
